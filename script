@@ -1,0 +1,17 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Steven X HUB V1", "BloodTheme")
+
+local Tab = Window:NewTab("Scripts")
+local ScriptsSection = Tab:NewSection("Scripts")
+ScriptsSection:NewSlider("Walkspeed", "More Speed", 500, 20, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+ScriptsSection:NewSlider("JumpPower", "More Jump", 500, 50, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+local Tab = Window:NewTab("Scripts2")
+local Scripts2Section = Tab:NewSection("Scripts2")
+local Section = Tab:NewSection("Your Mom Gay!!! Took the LLL")
